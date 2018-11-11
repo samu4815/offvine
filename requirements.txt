@@ -1,2 +1,6 @@
 matplotlib
 pandas
+scipy
+numpy
+sklearn
+csv

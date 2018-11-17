@@ -48,6 +48,7 @@ median_points = avg_points_by_vintage_country['points'].agg(np.median)
 avg_points_by_vintage_country['quality'] = np.where(avg_points_by_vintage_country['points'] > median_points, 1, 0)
 
 # print avg_points_by_vintage_country.query('country == "US"')
+
 print avg_points_by_country
 avg_points_by_country.plot(kind='bar')
 plt.show()
